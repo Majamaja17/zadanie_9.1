@@ -1,14 +1,12 @@
 var a = prompt("Podaj a");
-var b = prompt("Podaj b");
-var value = (a * a) - (2 * a * b) - (b * b);
-console.log(value);
+var h = prompt("Podaj h");
 
-if (value > 0) {
-	document.write("wynik dodatni");
-} else if (value < 0) {
-	document.write("wynik ujemny");
-} else if (isNaN(value)) {
-	document.write("wynik jest NaN");
-} else {
-	document.write("wynik jest równy zero");
+function getTriangleArea(a, h) {
+	if (a < 0) && (h < 0) {
+		document.write("Nieprawidłowe dane");
+	} else if (a > 0) || (h > 0) {
+		return getArea (a*h/2);
+	}
 }
+
+console.log(getTriangleArea(10, 6));
