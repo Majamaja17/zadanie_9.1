@@ -9,13 +9,9 @@ var triangleArea = getTriangleArea (a, h),
 function getTriangleArea (a, h) {
 
 	if ((a <= 0) && (h <= 0)) {
-		document.write("Nieprawidłowe dane");
-	} else if ((a > 0) || (h > 0)) {
+		return document.write("Nieprawidłowe dane");
 		return a * h / 2;
 	}
 }
 
 console.log(getTriangleArea(10, 6));
-
-
-
