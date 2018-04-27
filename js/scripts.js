@@ -6,12 +6,13 @@ var triangleArea = getTriangleArea (a, h),
 	triangle3Area = getTriangleArea(10, 10);
 
 
-function getTriangleArea (a, h) {
+function getTriangleArea(a, h) {
 
 	if ((a <= 0) && (h <= 0)) {
 		return document.write("Nieprawidłowe dane");
-		return a * h / 2;
 	}
+
+	return a * h / 2;
 }
 
 console.log(getTriangleArea(10, 6));
